@@ -1,0 +1,23 @@
+<p id="notice"><%= notice %></p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+   <tbody>
+    <% @description.each do |desc| %>
+      <tr>
+        <td><%= desc.description %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+ 
+</table>
+
+<br>
+

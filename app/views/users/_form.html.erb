@@ -1,0 +1,22 @@
+<%= form_with(model: user, local: true) do |form| %>
+  
+
+  <div class="field">
+    <%= form.label :uname %>
+    <%= form.text_field :user_name, id: :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone_no %>
+    <%= form.text_field :phone_no, id: :user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adhar_no %>
+    <%= form.text_field :adhar_no, id: :user %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

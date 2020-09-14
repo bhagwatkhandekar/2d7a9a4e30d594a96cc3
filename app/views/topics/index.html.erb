@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic Number</th>
+      <th> Topic Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+   <tbody>
+    <% @topics.each do |topic| %>
+      <tr>
+        <td><%= topic.topic_number %></td>
+        <td><%= topic.topic_name %></td>
+
+        
+      </tr>
+    <% end %>
+  </tbody>
+ 
+</table>
+
+<br>
+
